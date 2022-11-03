@@ -1,10 +1,7 @@
 ﻿using Lab1_WPF.Entity;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lab1_WPF.Models
 {
@@ -21,6 +18,8 @@ namespace Lab1_WPF.Models
             Flights = Extension.GetDefaultFlights(Employees);
         }
 
+        //Властивість Instance з методом get
+        //що відповідає методу GetInstance у Java
         private static MainModel instance;
         public static MainModel Instance
         {
