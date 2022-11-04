@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace Lab1_WPF.ViewModels
 {
     //Реалізація паттерну команда
+    //інтерфейс ICommand береться з простору імен System.Windows.Input
     public class RelayCommand : ICommand
     {
         private Action<object> execute;         
